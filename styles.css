@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* position: relative; */
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b1ad80110033973.5fe203f16a416.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+.container{
+    width:100%;
+}
+
+.cards {
+    /* margin: 0 auto; */
+    position: relative;
+
+}
+
+.card {
+    background: orange;
+    margin: auto;
+    margin-left: 140px;
+    border-radius: 1rem;
+    transform: skewX(-10deg);
+    transform: rotate(5deg);
+    transform: rotateY(-20deg) rotateX(20deg);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    transition: 0.5s;
+    margin-top: 100px;
+    position: absolute;
+
+    background-color: rgba(23, 12, 61, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.2px inset;
+}
+
+.cards:hover .card {
+    transform: rotate(0deg);
+}
+
+.cb1 {
+    z-index: -1;
+    width: 200px;
+    height: 120px;
+    top: -50px;
+    left: 0px;
+}
+
+.cb2 {
+    z-index: -1;
+    width: 200px;
+    height: 120px;
+    top: -40px;
+    left: 250px;
+}
+
+.c1 {
+    z-index: 1;
+    width: 700px;
+    height: 400px;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/2nUGsD2QnvC9BzM8geN48M-970-80.jpg.webp");
+    background-size: cover;
+}
+
+.c2 {
+    z-index: 2;
+    width: 400px;
+    height: 300px;
+    top: 150px;
+    left: 50px;
+}
+
+.c3 {
+    z-index: 3;
+    width: 400px;
+    height: 300px;
+    top: 180px;
+    left: 350px;
+}
+
+.cards:hover .cb1 {
+    transform: translate(-40px, -20px);
+}
+
+.cards:hover .cb2 {
+    transform: translate(-40px, -30px);
+}
+
+.cards:hover .c2 {
+    transform: translate(-130px, 60px);
+}
+
+.cards:hover .c3 {
+    transform: translate(30px, 30px);
+}
